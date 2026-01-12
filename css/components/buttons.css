@@ -1,0 +1,133 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 4px 15px -5px var(--primary);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: linear-gradient(
+    to right,
+    hsl(184, 100%, 85%),
+    hsl(174, 100%, 75%)
+  );
+  color: hsl(210, 30%, 8%);
+  box-shadow: var(--shadow-float);
+  border: 1px solid hsla(174, 100%, 75%, 0.2);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-wave);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+}
+
+.btn-hero {
+  background: var(--gradient-ocean);
+  color: var(--primary-foreground);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-wave);
+  border-radius: 9999px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px -10px hsla(210, 100%, 25%, 0.5);
+}
+
+.btn-outline-hero {
+  background: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  border-radius: 9999px;
+}
+
+/* ================================
+   Botões Mobile
+=============================== */
+
+/* Botão outline mobile */
+.mobile-btn-outline {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mobile-btn-outline:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Botão primary mobile */
+.mobile-btn-primary {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mobile-btn-primary:hover {
+  background-color: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+/* ================================
+   Fim dos Botões Mobile
+   

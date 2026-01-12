@@ -1,0 +1,44 @@
+
+:root{
+    /*FUNDOS E TEXTOS*/
+    --background:hsl(210, 38%, 96%);
+    --foreground:hsl(210, 25%, 10%);
+    --muted-foreground:hsl(210, 10%, 45%);
+
+    /*CORES PRINCIPAIS*/
+    --primary:hsl(207, 90%, 45%);
+    --primary-light:hsl(207, 80%, 65%);
+    --primary-dark:hsl(207, 90%, 30%);
+    --primary-foreground:hsl(0, 0%, 100%);
+
+    /*CORES SECUNDÁRIAS*/
+    --secondary:hsl(40, 100%, 88%);
+    --secondary-foreground:hsl(210, 25%, 15%);
+
+    /*ACENTOS*/
+    --accent:hsl(174, 70%, 55%);
+    --accent-foreground:hsl(210, 25%, 10%);
+
+    /*BORDAS E SOMBRAS*/
+    --border:hsl(210, 30%, 88%);
+    --shadow-float:0 5px 20px -5px hsla(210, 60%, 40%, 0.25);
+    --shadow-wave: 0 10px 40px -10px hsla(207, 85%,35%, 0.35);
+
+    /*GRADIENTES*/
+    --gradient-ocean: linear-gradient(
+        135deg, 
+        var(--primary-dark), 
+        var(--primary-light)
+    );
+
+    --gradient-text:linear-gradient(
+        to right,
+        var(--accent),
+        var(--primary-light)
+    );
+
+
+    /*TRANSIÇÕES*/
+    --transition-smooth: all 0.3s 
+    cubic-bezier(0.4, 0, 0.2, 1);
+}

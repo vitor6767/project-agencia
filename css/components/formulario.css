@@ -1,0 +1,96 @@
+/* ==========================
+   Estilos para formulários
+   (aplicados às páginas de login/cadastro via .form-card/.auth-form)
+   ========================== */
+.form-card {
+   background: #ffffff;
+   border-radius: 12px;
+   box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+   padding: 2rem;
+   max-width: 540px;
+   margin: 2.25rem auto;
+}
+.form-card h2 {
+   margin: 0 0 1rem 0;
+   font-size: 1.25rem;
+}
+.auth-form .form-row {
+   margin-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
+}
+.auth-form label {
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   color: #24303a;
+   font-size: 0.95rem;
+}
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form input[type="tel"],
+.auth-form select,
+.auth-form textarea {
+   padding: 0.75rem 1rem;
+   border: 1px solid #e6eef6;
+   border-radius: 10px;
+   font-size: 1rem;
+   background: #fff;
+   transition: border-color .15s ease, box-shadow .15s ease;
+   width: 100%;
+   box-sizing: border-box;
+}
+.auth-form input:focus {
+   outline: none;
+   border-color: #2b9bd7;
+   box-shadow: 0 6px 18px rgba(43,155,215,0.08);
+}
+.form-row--inline {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+}
+.form-row--inline .checkbox {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.95rem;
+}
+.muted {
+   color: #7a8a94;
+   font-size: 0.95rem;
+}
+.form-card .btn.btn-primary {
+   padding: 0.9rem 1.25rem;
+   border-radius: 10px;
+}
+
+/* Toasts (mensagens rápidas) */
+.toast-container {
+   position: fixed;
+   right: 1rem;
+   bottom: 1rem;
+   top: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   z-index: 9999;
+}
+.toast {
+   min-width: 220px;
+   max-width: 360px;
+   padding: 0.75rem 1rem;
+   border-radius: 8px;
+   color: #fff;
+   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+   font-weight: 600;
+}
+.toast--success { background: linear-gradient(90deg,#2bb673,#1fa65a); }
+.toast--error { background: linear-gradient(90deg,#ff6b6b,#ff4c4c); }
+.toast--info { background: linear-gradient(90deg,#2b9bd7,#1b7fb6); }
+
+
+@media (max-width: 640px) {
+   .form-card { padding: 1.25rem; margin: 1.25rem 1rem; }
+}
+

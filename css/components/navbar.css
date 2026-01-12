@@ -1,0 +1,149 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background: hsl(210,40%, 98%, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid hsla(210,30%,90%, 0.5);
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    display: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-item{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    transition: color 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active{
+    color: var(--primary);
+}
+
+.nav-links .btn{
+    margin-left: 1rem;
+}
+
+.menu-toggle{
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/*MENU MOBILE*/
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    background: hsla(210, 40%, 98%, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid hsla(210, 30%, 90%, 0.5);
+}
+
+.mobile-nav-item{
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    color: var(--muted-foreground);
+    transition: var(--transition-smooth);
+}
+
+.mobile-nav-item:hover,
+.mobile-nav-item.active{
+    background-color: hsla(210, 100%, 40%, 0.1);
+    color: var(--primary);
+}
+
+.mobile-btn-outline{
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.375rem;
+    text-align: center;
+    color: var(--foreground);
+}
+
+.mobile-btn-primary{
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+/*logo */ /*qualquer coisa remover esse bloco aq*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  padding: 0.5rem;
+  background: var(--gradient-ocean);
+  border-radius: 9999px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+  transform: scale(1.1);
+}
+
+.logo-icon svg {
+  color: var(--primary-foreground);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =======================================
+   Media Queries - Navbar (navbar.css)
+======================================= */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  /* Regra original do seu CSS para botões dentro da nav-links */
+  .nav-links .btn {
+    margin-left: 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}

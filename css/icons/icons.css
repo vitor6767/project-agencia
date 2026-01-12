@@ -1,0 +1,44 @@
+/* Estilos para ícones no rodapé */
+.social-links a svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.service-icon-overlay svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+.service-rating-overlay svg {
+  height: 1rem;
+  width: 1rem;
+  color: hsl(48, 100%, 65%);
+}
+
+/* Estilos para ícones no logo */
+.logo-icon svg {
+  color: var(--primary-foreground);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Estilos para ícones nos cards de serviços */
+.feature-item svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--accent);
+}
+
+.service-icon-overlay svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+.service-rating-overlay svg {
+  height: 1rem;
+  width: 1rem;
+  color: hsl(48, 100%, 65%);
+}
+
